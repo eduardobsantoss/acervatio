@@ -129,7 +129,7 @@ img{max-width:100%}
 
 /* HERO (dark) */
 .acv-hero{position:relative;min-height:100vh;background:var(--navy);overflow:hidden}
-.acv-hero-bg-pattern{position:absolute;inset:0;background-image:url('brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.05}
+.acv-hero-bg-pattern{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.05}
 .acv-hero-bg-gradient{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(6,15,29,.35) 0%,rgba(6,15,29,.6) 46%,var(--navy) 78%)}
 .acv-hero-curve{position:absolute;left:0;right:0;bottom:0;width:100%;height:280px}
 .acv-hero-content{position:relative;max-width:1100px;margin:0 auto;padding:200px 24px 120px;box-sizing:border-box}
@@ -160,7 +160,7 @@ img{max-width:100%}
 
 /* RESULTADOS */
 .acv-resultados{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
-.acv-resultados-bg{position:absolute;inset:0;background-image:url('brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.045}
+.acv-resultados-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.045}
 .acv-resultados-inner{position:relative;max-width:900px;margin:0 auto}
 .acv-resultados-head{max-width:560px;margin-bottom:48px}
 .acv-placeholder-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
@@ -191,7 +191,7 @@ img{max-width:100%}
 @media (max-width:850px){.acv-pilar-item{min-height:0;padding:20px 0 20px 20px}}
 .acv-pilares-visual{position:relative;border-radius:2px;overflow:hidden;background:var(--navy);min-height:520px;height:calc(100vh - 220px);max-height:640px;align-self:start;position:sticky;top:118px;display:flex;flex-direction:column;padding:28px}
 @media (max-width:850px){.acv-pilares-visual{position:relative;top:0;height:auto;min-height:460px}}
-.acv-pilares-visual-bg{position:absolute;inset:0;background-image:url('brand/pattern-linhas-azul.png');background-size:320px 180px;opacity:.06}
+.acv-pilares-visual-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:320px 180px;opacity:.06}
 .acv-pilares-visual-gradient{position:absolute;inset:0;background:linear-gradient(150deg,rgba(10,22,40,.35),rgba(10,22,40,.9))}
 .acv-pilares-symbol{position:absolute;right:-70px;top:70px;width:420px;opacity:.07}
 .acv-pilares-pills{position:relative;display:flex;gap:8px;flex-wrap:wrap}
@@ -210,29 +210,42 @@ img{max-width:100%}
 .acv-panel-value{font:600 21px/1.3 'Darker Grotesque',sans-serif;color:var(--bg);margin-top:10px}
 .acv-panel-value-dim{color:rgba(239,239,230,.72)}
 
-/* RELATÓRIO */
-.acv-relatorio{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
-.acv-relatorio-bg{position:absolute;inset:0;background-image:url('brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.045}
-.acv-relatorio-inner{position:relative;max-width:1200px;margin:0 auto}
-.acv-relatorio-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px}
-.acv-report-card{position:relative;background:var(--bg);border-radius:2px;box-shadow:0 30px 80px rgba(0,0,0,.42);padding:36px;display:grid;grid-template-columns:1fr minmax(220px,280px);gap:40px}
-@media (max-width:720px){.acv-report-card{grid-template-columns:1fr}}
-.acv-report-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(10,22,40,.16);padding-bottom:18px}
-.acv-report-logo{height:28px;display:block}
-.acv-report-meta{text-align:right;font:600 12px/1.6 'Darker Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(10,22,40,.55)}
-.acv-report-body{font:400 clamp(20px,2.4vw,28px)/1.35 'Darker Grotesque',sans-serif;color:var(--navy);margin-top:26px}
-.acv-report-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(10,22,40,.14);margin-top:30px;border:1px solid rgba(10,22,40,.14)}
-.acv-report-stat{background:var(--bg);padding:16px 18px}
-.acv-report-stat-label{font:600 11px/1 'Darker Grotesque',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:rgba(10,22,40,.55)}
-.acv-report-stat-value{font:700 30px/1 'Darker Grotesque',sans-serif;color:var(--navy);margin-top:6px}
-.acv-report-side{border-left:1px solid rgba(10,22,40,.14);padding-left:28px;display:flex;flex-direction:column;gap:22px}
-@media (max-width:720px){.acv-report-side{border-left:none;padding-left:0;border-top:1px solid rgba(10,22,40,.14);padding-top:22px}}
-.acv-report-expiry{font:700 36px/1 'Darker Grotesque',sans-serif;color:var(--bronze);margin-top:8px}
-.acv-report-expiry-note{font:500 14px/1.4 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.7);margin-top:6px}
-.acv-report-divider{height:1px;background:rgba(10,22,40,.12)}
-.acv-report-next{font:600 19px/1.25 'Darker Grotesque',sans-serif;color:var(--navy);margin-top:8px}
-.acv-report-manager{margin-top:auto}
-.acv-report-manager-name{font:600 18px/1.2 'Darker Grotesque',sans-serif;color:var(--navy);margin-top:8px}
+/* SOBRE */
+.acv-sobre{background:var(--bg);padding:100px 24px;box-sizing:border-box;border-top:1px solid rgba(10,22,40,.08)}
+.acv-sobre-grid{display:grid;grid-template-columns:minmax(240px,1fr) minmax(280px,560px);gap:60px}
+@media (max-width:800px){.acv-sobre-grid{grid-template-columns:1fr}}
+.acv-sobre-text{font:500 19px/1.55 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.72)}
+.acv-sobre-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(10,22,40,.14);margin-top:32px;border:1px solid rgba(10,22,40,.14)}
+@media (max-width:520px){.acv-sobre-facts{grid-template-columns:1fr}}
+.acv-sobre-fact{background:var(--bg);padding:18px 16px}
+.acv-sobre-fact-value{font:700 22px/1.1 'Darker Grotesque',sans-serif;color:var(--navy)}
+.acv-sobre-fact-label{font:500 13px/1.3 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.62);margin-top:6px}
+
+/* SERVIÇOS */
+.acv-servicos{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
+.acv-servicos-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.045}
+.acv-servicos-inner{position:relative;max-width:1200px;margin:0 auto}
+.acv-servicos-head{max-width:560px;margin-bottom:48px}
+.acv-servicos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:rgba(239,239,230,.14)}
+.acv-servico-item{background:var(--navy);padding:22px 22px 24px}
+.acv-servico-title{font:700 21px/1.15 'Darker Grotesque',sans-serif;color:var(--bg)}
+.acv-servico-desc{font:500 15px/1.4 'Darker Grotesque',sans-serif;color:rgba(239,239,230,.65);margin-top:8px}
+a.acv-servico-item{display:block;text-decoration:none;transition:background var(--dur-fast) var(--ease)}
+a.acv-servico-item:hover{background:#122034}
+a.acv-servico-item:hover .acv-servico-title{color:var(--gold-light)}
+
+/* CASES */
+.acv-cases{background:var(--bg);padding:100px 24px;box-sizing:border-box}
+.acv-cases-head{max-width:560px;margin-bottom:48px}
+.acv-placeholder-grid-light .acv-placeholder-card{border-color:rgba(10,22,40,.22)}
+.acv-placeholder-grid-light .acv-placeholder-value{color:var(--bronze)}
+.acv-placeholder-grid-light .acv-placeholder-label{color:rgba(10,22,40,.6)}
+
+/* DEPOIMENTOS */
+.acv-depoimentos{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
+.acv-depoimentos-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.045}
+.acv-depoimentos-inner{position:relative;max-width:1200px;margin:0 auto}
+.acv-depoimentos-head{max-width:560px;margin-bottom:48px}
 
 /* FAQ */
 .acv-faq{background:var(--bg);padding:100px 24px;box-sizing:border-box}
@@ -250,7 +263,7 @@ img{max-width:100%}
 
 /* CONTATO */
 .acv-contato{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
-.acv-contato-bg{position:absolute;inset:0;background-image:url('brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.022}
+.acv-contato-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.022}
 .acv-contato-symbol{position:absolute;left:-140px;bottom:-160px;width:520px;opacity:.08}
 .acv-contato-inner{position:relative;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(280px,1fr) minmax(300px,480px);gap:60px}
 @media (max-width:800px){.acv-contato-inner{grid-template-columns:1fr}}
