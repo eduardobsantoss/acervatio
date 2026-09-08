@@ -160,7 +160,6 @@ img{max-width:100%}
 
 /* RESULTADOS */
 .acv-resultados{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
-.acv-resultados-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.045}
 .acv-resultados-inner{position:relative;max-width:900px;margin:0 auto}
 .acv-resultados-head{max-width:560px;margin-bottom:48px}
 .acv-placeholder-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
@@ -191,7 +190,6 @@ img{max-width:100%}
 @media (max-width:850px){.acv-pilar-item{min-height:0;padding:20px 0 20px 20px}}
 .acv-pilares-visual{position:relative;border-radius:2px;overflow:hidden;background:var(--navy);min-height:520px;height:calc(100vh - 220px);max-height:640px;align-self:start;position:sticky;top:118px;display:flex;flex-direction:column;padding:28px}
 @media (max-width:850px){.acv-pilares-visual{position:relative;top:0;height:auto;min-height:460px}}
-.acv-pilares-visual-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:320px 180px;opacity:.06}
 .acv-pilares-visual-gradient{position:absolute;inset:0;background:linear-gradient(150deg,rgba(10,22,40,.35),rgba(10,22,40,.9))}
 .acv-pilares-symbol{position:absolute;right:-70px;top:70px;width:420px;opacity:.07}
 .acv-pilares-pills{position:relative;display:flex;gap:8px;flex-wrap:wrap}
@@ -223,7 +221,6 @@ img{max-width:100%}
 
 /* SERVIÇOS */
 .acv-servicos{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
-.acv-servicos-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.045}
 .acv-servicos-inner{position:relative;max-width:1200px;margin:0 auto}
 .acv-servicos-head{max-width:560px;margin-bottom:48px}
 .acv-servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(239,239,230,.14)}
@@ -244,7 +241,6 @@ a.acv-servico-item:hover .acv-servico-title{color:var(--gold-light)}
 
 /* DEPOIMENTOS */
 .acv-depoimentos{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
-.acv-depoimentos-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.045}
 .acv-depoimentos-inner{position:relative;max-width:1200px;margin:0 auto}
 .acv-depoimentos-head{max-width:560px;margin-bottom:48px}
 
@@ -264,7 +260,6 @@ a.acv-servico-item:hover .acv-servico-title{color:var(--gold-light)}
 
 /* CONTATO */
 .acv-contato{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
-.acv-contato-bg{position:absolute;inset:0;background-image:url('assets/brand/pattern-linhas-azul.png');background-size:420px 236px;opacity:.022}
 .acv-contato-symbol{position:absolute;left:-140px;bottom:-160px;width:520px;opacity:.08}
 .acv-contato-inner{position:relative;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:minmax(280px,1fr) minmax(300px,480px);gap:60px}
 @media (max-width:800px){.acv-contato-inner{grid-template-columns:1fr}}

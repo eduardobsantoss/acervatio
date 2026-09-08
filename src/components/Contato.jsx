@@ -8,7 +8,6 @@ export default function Contato() {
 
   return (
     <section id="contato" className="acv-contato">
-      <div className="acv-contato-bg"></div>
       <img src={symbolDourado} className="acv-contato-symbol" alt="" />
       <div className="acv-contato-inner">
         <div className="rv" ref={leftRef}>

@@ -58,7 +58,6 @@ export default function Pilares() {
           </div>
         </div>
         <div className="acv-pilares-visual rv" ref={visualRef}>
-          <div className="acv-pilares-visual-bg"></div>
           <div className="acv-pilares-visual-gradient"></div>
           <img src={symbolBege} className="acv-pilares-symbol" alt="" />
           <div className="acv-pilares-pills">

@@ -7,7 +7,6 @@ export default function Resultados() {
 
   return (
     <section id="resultados" className="acv-resultados">
-      <div className="acv-resultados-bg"></div>
       <div className="acv-resultados-inner">
         <div className="acv-resultados-head rv" ref={headRef}>
           <div className="acv-eyebrow acv-eyebrow-gold">RESULTADOS</div>
