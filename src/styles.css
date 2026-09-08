@@ -223,9 +223,9 @@ img{max-width:100%}
 .acv-servicos{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
 .acv-servicos-inner{position:relative;max-width:1200px;margin:0 auto}
 .acv-servicos-head{max-width:560px;margin-bottom:48px}
-.acv-servicos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(239,239,230,.14)}
-@media (max-width:700px){.acv-servicos-grid{grid-template-columns:1fr}}
-.acv-servico-item{background:var(--navy);padding:22px 22px 24px}
+.acv-servicos-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:1px;background:rgba(239,239,230,.14)}
+.acv-servico-item{flex:0 0 calc(25% - 1px);box-sizing:border-box;background:var(--navy);padding:22px 22px 24px}
+@media (max-width:700px){.acv-servico-item{flex:0 0 100%}}
 .acv-servico-title{font:700 21px/1.15 'Darker Grotesque',sans-serif;color:var(--bg)}
 .acv-servico-desc{font:500 15px/1.4 'Darker Grotesque',sans-serif;color:rgba(239,239,230,.65);margin-top:8px}
 a.acv-servico-item{display:block;text-decoration:none;transition:background var(--dur-fast) var(--ease)}
