@@ -29,7 +29,6 @@ export default function Servicos() {
 
   return (
     <section id="servicos" className="acv-servicos">
-      <div className="acv-servicos-bg"></div>
       <div className="acv-servicos-inner">
         <div className="acv-servicos-head rv" ref={headRef}>
           <div className="acv-eyebrow acv-eyebrow-gold">SERVIÇOS</div>
