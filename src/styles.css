@@ -177,37 +177,6 @@ img{max-width:100%}
 .acv-cmp-solo{padding:22px 24px;font:500 16px/1.4 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.65)}
 .acv-cmp-gerido{padding:22px 24px;background:var(--navy);font:500 16px/1.4 'Darker Grotesque',sans-serif;color:var(--bg);border-radius:2px 2px 0 0}
 
-/* PILARES */
-.acv-pilares{background:var(--bg);padding:100px 24px;box-sizing:border-box;border-top:1px solid rgba(10,22,40,.08)}
-.acv-pilares-grid{display:grid;grid-template-columns:minmax(280px,1fr) minmax(280px,540px);gap:60px}
-@media (max-width:850px){.acv-pilares-grid{grid-template-columns:1fr}}
-.acv-pilares-list{display:flex;flex-direction:column;gap:20px}
-.acv-pilares-heading{margin-bottom:20px}
-.acv-pilar-item{border-left:2px solid rgba(10,22,40,.12);padding-left:24px;opacity:.42;min-height:52vh;display:flex;flex-direction:column;justify-content:center;transition:opacity var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease)}
-.acv-pilar-item.is-active{opacity:1;border-color:var(--gold)}
-.acv-pilar-title{font:700 32px/1.05 'Darker Grotesque',sans-serif;color:var(--navy)}
-.acv-pilar-desc{font:500 17px/1.5 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.7);margin-top:10px;max-width:420px}
-@media (max-width:850px){.acv-pilar-item{min-height:0;padding:20px 0 20px 20px}}
-.acv-pilares-visual{position:relative;border-radius:2px;overflow:hidden;background:var(--navy);min-height:520px;height:calc(100vh - 220px);max-height:640px;align-self:start;position:sticky;top:118px;display:flex;flex-direction:column;padding:28px}
-@media (max-width:850px){.acv-pilares-visual{position:relative;top:0;height:auto;min-height:460px}}
-.acv-pilares-visual-gradient{position:absolute;inset:0;background:linear-gradient(150deg,rgba(10,22,40,.35),rgba(10,22,40,.9))}
-.acv-pilares-symbol{position:absolute;right:-70px;top:70px;width:420px;opacity:.07}
-.acv-pilares-pills{position:relative;display:flex;gap:8px;flex-wrap:wrap}
-.acv-pilares-stage{position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;padding:24px 4px}
-.acv-pilares-stage-num{font:700 clamp(90px,13vw,168px)/.85 'Darker Grotesque',sans-serif;color:var(--gold);opacity:.5;letter-spacing:-.03em}
-.acv-pilares-stage-title{font:700 clamp(34px,4vw,52px)/1 'Darker Grotesque',sans-serif;color:var(--bg);margin-top:8px}
-.acv-pill{padding:7px 14px;border-radius:999px;background:transparent;color:rgba(239,239,230,.72);border:1px solid rgba(239,239,230,.2);font:600 13px/1 'Darker Grotesque',sans-serif;cursor:pointer;transition:background var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease)}
-.acv-pill.is-active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
-.acv-pilares-panel{position:relative}
-.acv-pilares-panel-inner{border-radius:2px;background:rgba(239,239,230,.05);border:1px solid rgba(239,239,230,.14)}
-.acv-pilares-panel-inner{display:grid;grid-template-columns:1fr 1fr}
-.acv-pilares-panel-col{padding:22px 24px}
-.acv-pilares-panel-col-border{border-right:1px solid rgba(239,239,230,.12)}
-.acv-panel-label{font:600 12px/1 'Darker Grotesque',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(239,239,230,.55)}
-.acv-panel-label-gold{color:var(--gold-light)}
-.acv-panel-value{font:600 21px/1.3 'Darker Grotesque',sans-serif;color:var(--bg);margin-top:10px}
-.acv-panel-value-dim{color:rgba(239,239,230,.72)}
-
 /* SOBRE */
 .acv-sobre{background:var(--bg);padding:100px 24px;box-sizing:border-box;border-top:1px solid rgba(10,22,40,.08)}
 .acv-sobre-grid{display:grid;grid-template-columns:minmax(240px,1fr) minmax(280px,560px);gap:60px}
@@ -231,13 +200,6 @@ img{max-width:100%}
 a.acv-servico-item{display:block;text-decoration:none;transition:background var(--dur-fast) var(--ease)}
 a.acv-servico-item:hover{background:#122034}
 a.acv-servico-item:hover .acv-servico-title{color:var(--gold-light)}
-
-/* CASES */
-.acv-cases{background:var(--bg);padding:100px 24px;box-sizing:border-box}
-.acv-cases-head{max-width:560px;margin-bottom:48px}
-.acv-placeholder-grid-light .acv-placeholder-card{border-color:rgba(10,22,40,.22)}
-.acv-placeholder-grid-light .acv-placeholder-value{color:var(--bronze)}
-.acv-placeholder-grid-light .acv-placeholder-label{color:rgba(10,22,40,.6)}
 
 /* DEPOIMENTOS */
 .acv-depoimentos{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}

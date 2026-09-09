@@ -9,8 +9,6 @@ import Servicos from './components/Servicos';
 import Metodo from './components/Metodo';
 import Resultados from './components/Resultados';
 import Comparacao from './components/Comparacao';
-import Pilares from './components/Pilares';
-import Cases from './components/Cases';
 import Depoimentos from './components/Depoimentos';
 import Faq from './components/Faq';
 import Contato from './components/Contato';
@@ -31,8 +29,6 @@ export default function App() {
       <Metodo />
       <Resultados />
       <Comparacao />
-      <Pilares />
-      <Cases />
       <Depoimentos />
       <Faq />
       <Contato />

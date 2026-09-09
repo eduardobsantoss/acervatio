@@ -7,7 +7,6 @@ const SITE_LINKS = [
   { id: 'metodo', label: 'Método' },
   { id: 'resultados', label: 'Resultados' },
   { id: 'diferenca', label: 'A Diferença' },
-  { id: 'cases', label: 'Cases' },
   { id: 'depoimentos', label: 'Depoimentos' },
   { id: 'faq', label: 'FAQ' },
   { id: 'contato', label: 'Contato' },

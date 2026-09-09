@@ -10,10 +10,10 @@ function PlaceholderCard({ label, index }) {
   );
 }
 
-// Shared "em breve" honest placeholder grid — reused by Resultados, Cases and Depoimentos.
-export default function PlaceholderGrid({ labels, light }) {
+// Shared "em breve" honest placeholder grid — reused by Resultados and Depoimentos.
+export default function PlaceholderGrid({ labels }) {
   return (
-    <div className={`acv-placeholder-grid${light ? ' acv-placeholder-grid-light' : ''}`}>
+    <div className="acv-placeholder-grid">
       {labels.map((label, i) => (
         <PlaceholderCard key={`${label}-${i}`} label={label} index={i} />
       ))}

@@ -18,8 +18,6 @@ export const RESULTADOS_PLACEHOLDERS = [
   'Famílias atendidas',
 ];
 
-export const CASES_PLACEHOLDERS = ['Case 01', 'Case 02', 'Case 03'];
-
 export const DEPOIMENTOS_PLACEHOLDERS = [
   'Depoimento de cliente',
   'Depoimento de cliente',
@@ -47,12 +45,6 @@ export const CMP = [
   { feature: 'Timing da transferência', solo: 'Transfere quando lembra — em geral sem bônus', gerido: 'Executada na janela de bônus, com CM projetado antes' },
   { feature: 'Emissão do bilhete', solo: 'Horas procurando disponibilidade e taxas altas', gerido: 'Emitimos no seu nome, comparando rotas e taxas' },
   { feature: 'Relatório mensal', solo: 'Não existe', gerido: 'Saldo, expirações, CM e economia acumulada' },
-];
-
-export const PILARES = [
-  { title: 'Segurança', desc: 'Nunca pedimos senha de banco ou token. O acesso é apenas aos programas de fidelidade, com sua autorização explícita e registro de cada operação.', solo: 'Reserva apenas o que pede', gerido: 'Administra o patrimônio inteiro' },
-  { title: 'Transparência', desc: 'Cada transferência tem CM projetado antes e CM realizado depois. Você vê o número, não a promessa.', solo: 'Atende uma vez, sem acompanhar depois', gerido: 'Acompanha o ciclo completo de bônus' },
-  { title: 'Especialidade', desc: 'Sete programas, regras que mudam sem aviso e janelas de 48 horas. É isso que fazemos todos os dias.', solo: 'Você decide sozinho, sem dados', gerido: 'Decidimos com dados, todos os dias' },
 ];
 
 export const FAQS = [
