@@ -7,7 +7,6 @@ const LINKS = [
   { id: 'metodo', label: 'Método', dim: false },
   { id: 'resultados', label: 'Resultados', dim: true },
   { id: 'diferenca', label: 'Diferença', dim: true },
-  { id: 'cases', label: 'Cases', dim: true },
   { id: 'depoimentos', label: 'Depoimentos', dim: true },
   { id: 'faq', label: 'FAQ', dim: true },
 ];
