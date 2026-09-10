@@ -1,4 +1,4 @@
-import logoTagBege from '../assets/brand/logo-h-tag-bege.svg';
+import logoBege from '../assets/brand/logo-h-bege.svg';
 import { WA_URL } from '../data/content';
 
 const SITE_LINKS = [
@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="acv-footer-inner">
         <div className="acv-footer-grid">
           <div className="acv-footer-brand">
-            <img src={logoTagBege} alt="Acervatio" />
+            <img src={logoBege} alt="Acervatio" />
             <div className="acv-footer-brand-text">
               Gestão privada de patrimônio em milhas. Atendimento sob indicação, em todo o Brasil.
             </div>

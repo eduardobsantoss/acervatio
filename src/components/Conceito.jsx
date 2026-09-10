@@ -6,7 +6,6 @@ export default function Conceito() {
   return (
     <section id="conceito" className="acv-manifesto rv" ref={ref}>
       <div className="acv-manifesto-inner">
-        <div className="acv-eyebrow acv-eyebrow-dark">O CONCEITO</div>
         <div className="acv-manifesto-text">
           Aquilo que se acumula ao longo do tempo também possui valor — e merece ser administrado. Pontos e milhas
           formam um <span className="acv-bold">patrimônio invisível</span>. Sem estratégia, ele se desperdiça em
