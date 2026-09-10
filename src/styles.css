@@ -89,15 +89,15 @@ img{max-width:100%}
 .acv-header.is-hidden{transform:translateY(-140%)}
 .acv-progress-track{position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:min(100%,1560px);height:2px;background:rgba(10,22,40,.08);border-radius:2px;overflow:hidden}
 .acv-progress-bar{height:100%;width:100%;background:var(--gold);transform-origin:left;transform:scaleX(0)}
-.acv-header-inner{display:flex;align-items:center;gap:28px;padding:11px 14px 11px 22px;border-radius:999px;background:rgba(239,239,230,.72);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(10,22,40,.09);box-shadow:0 4px 20px rgba(10,22,40,.08)}
-.acv-header-logo{height:22px;display:block}
+.acv-header-inner{display:flex;align-items:center;gap:32px;padding:15px 18px 15px 28px;border-radius:999px;background:rgba(239,239,230,.72);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(10,22,40,.09);box-shadow:0 4px 20px rgba(10,22,40,.08)}
+.acv-header-logo{height:30px;display:block}
 .acv-nav-desktop{display:none;align-items:center;gap:4px}
-.acv-nav-desktop a{padding:7px 15px;border-radius:999px;font:600 15px/1 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.7);transition:color var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.acv-nav-desktop a{padding:9px 17px;border-radius:999px;font:600 17px/1 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.7);transition:color var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
 .acv-nav-desktop a.is-active{color:var(--navy);background:rgba(10,22,40,.07)}
 .acv-header-actions{display:none;align-items:center;gap:18px}
-.acv-link-cliente{font:600 15px/1 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.62);white-space:nowrap}
+.acv-link-cliente{font:600 17px/1 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.62);white-space:nowrap}
 .acv-link-cliente:hover{color:var(--navy)}
-.acv-btn-dark{padding:9px 18px;border-radius:999px;background:var(--navy);color:var(--bg);font:600 15px/1 'Darker Grotesque',sans-serif;letter-spacing:.01em;display:inline-flex;align-items:center;white-space:nowrap;transition:background var(--dur-fast) var(--ease)}
+.acv-btn-dark{padding:11px 22px;border-radius:999px;background:var(--navy);color:var(--bg);font:600 17px/1 'Darker Grotesque',sans-serif;letter-spacing:.01em;display:inline-flex;align-items:center;white-space:nowrap;transition:background var(--dur-fast) var(--ease)}
 .acv-btn-dark:hover{background:var(--bronze);color:var(--bg)}
 .acv-burger{display:flex;flex-direction:column;gap:5px;padding:6px 2px;cursor:pointer}
 .acv-burger span{display:block;background:var(--navy)}
@@ -181,6 +181,7 @@ img{max-width:100%}
 .acv-sobre{background:var(--bg);padding:100px 24px;box-sizing:border-box;border-top:1px solid rgba(10,22,40,.08)}
 .acv-sobre-grid{display:grid;grid-template-columns:minmax(240px,1fr) minmax(280px,560px);gap:60px}
 @media (max-width:800px){.acv-sobre-grid{grid-template-columns:1fr}}
+.acv-sobre-body{margin-top:24px}
 .acv-sobre-text{font:500 19px/1.55 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.72)}
 .acv-sobre-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(10,22,40,.14);margin-top:32px;border:1px solid rgba(10,22,40,.14)}
 @media (max-width:520px){.acv-sobre-facts{grid-template-columns:1fr}}
@@ -239,7 +240,7 @@ a.acv-servico-item:hover .acv-servico-title{color:var(--gold-light)}
 .acv-footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:44px}
 .acv-footer-brand{grid-column:span 2;min-width:260px}
 @media (max-width:600px){.acv-footer-brand{grid-column:span 1}}
-.acv-footer-brand img{height:34px;display:block}
+.acv-footer-brand img{height:52px;display:block}
 .acv-footer-brand-text{font:500 17px/1.5 'Darker Grotesque',sans-serif;color:rgba(239,239,230,.72);margin-top:20px;max-width:320px}
 .acv-footer-col-title{font:600 12px/1 'Darker Grotesque',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px}
 .acv-footer-col-items{display:flex;flex-direction:column;gap:10px;font:500 17px/1.2 'Darker Grotesque',sans-serif}

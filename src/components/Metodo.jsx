@@ -25,11 +25,8 @@ export default function Metodo() {
           <div>
             <div className="acv-eyebrow">O MÉTODO</div>
             <div className="acv-h2">
-              Quatro etapas, sem <span className="acv-thin-italic">nenhuma senha sua</span>.
+              Quatro etapas.
             </div>
-          </div>
-          <div className="acv-section-sub">
-            Do primeiro raio-x da sua estrutura de cartões até o bilhete emitido no seu nome.
           </div>
         </div>
         <div className="acv-steps">
