@@ -144,7 +144,7 @@ img{max-width:100%}
 .acv-scroll-hint span{font:600 12px/1 'Darker Grotesque',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:rgba(239,239,230,.55)}
 
 /* MANIFESTO */
-.acv-manifesto{position:relative;padding:100px 24px;box-sizing:border-box;display:flex;justify-content:center}
+.acv-manifesto{position:relative;padding:40px 24px 100px;box-sizing:border-box;display:flex;justify-content:center}
 .acv-manifesto-inner{max-width:1000px;text-align:center}
 .acv-manifesto-text{font:400 clamp(26px,3.2vw,46px)/1.28 'Darker Grotesque',sans-serif;letter-spacing:-.015em;color:var(--navy)}
 .acv-manifesto-foot{margin-top:32px;font:500 15px/1.5 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.7);letter-spacing:.04em}
@@ -178,16 +178,13 @@ img{max-width:100%}
 .acv-cmp-gerido{padding:22px 24px;background:var(--navy);font:500 16px/1.4 'Darker Grotesque',sans-serif;color:var(--bg);border-radius:2px 2px 0 0}
 
 /* SOBRE */
-.acv-sobre{background:var(--bg);padding:100px 24px;box-sizing:border-box;border-top:1px solid rgba(10,22,40,.08)}
-.acv-sobre-grid{display:grid;grid-template-columns:minmax(240px,1fr) minmax(280px,560px);gap:60px}
+.acv-sobre{background:var(--bg);padding:100px 24px 40px;box-sizing:border-box;border-top:1px solid rgba(10,22,40,.08)}
+.acv-sobre-grid{display:grid;grid-template-columns:minmax(240px,1fr) minmax(220px,320px);gap:60px}
 @media (max-width:800px){.acv-sobre-grid{grid-template-columns:1fr}}
 .acv-sobre-body{margin-top:24px}
 .acv-sobre-text{font:500 19px/1.55 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.72)}
-.acv-sobre-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(10,22,40,.14);margin-top:32px;border:1px solid rgba(10,22,40,.14)}
-@media (max-width:520px){.acv-sobre-facts{grid-template-columns:1fr}}
-.acv-sobre-fact{background:var(--bg);padding:18px 16px}
-.acv-sobre-fact-value{font:700 22px/1.1 'Darker Grotesque',sans-serif;color:var(--navy)}
-.acv-sobre-fact-label{font:500 13px/1.3 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.62);margin-top:6px}
+.acv-sobre-photo{border:1px dashed rgba(10,22,40,.22);border-radius:2px;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
+.acv-sobre-photo-label{font:500 15px/1.3 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.55)}
 
 /* SERVIÇOS */
 .acv-servicos{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
