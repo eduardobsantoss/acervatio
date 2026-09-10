@@ -3,6 +3,7 @@ import useReveal from '../hooks/useReveal';
 export default function Sobre() {
   const headRef = useReveal();
   const bodyRef = useReveal();
+  const photoRef = useReveal();
 
   return (
     <section id="sobre" className="acv-sobre">
@@ -20,6 +21,9 @@ export default function Sobre() {
               mês após mês.
             </div>
           </div>
+        </div>
+        <div className="acv-sobre-photo rv" ref={photoRef}>
+          <div className="acv-sobre-photo-label">Foto de Bruno Humberto</div>
         </div>
       </div>
     </section>
