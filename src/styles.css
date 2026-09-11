@@ -179,7 +179,7 @@ img{max-width:100%}
 
 /* SOBRE */
 .acv-sobre{background:var(--bg);padding:100px 24px 40px;box-sizing:border-box;border-top:1px solid rgba(10,22,40,.08)}
-.acv-sobre-grid{display:grid;grid-template-columns:minmax(240px,1fr) minmax(220px,320px);gap:60px}
+.acv-sobre-grid{display:grid;grid-template-columns:minmax(240px,1fr) minmax(280px,420px);gap:60px}
 @media (max-width:800px){.acv-sobre-grid{grid-template-columns:1fr}}
 .acv-sobre-body{margin-top:24px}
 .acv-sobre-text{font:500 19px/1.55 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.72)}
