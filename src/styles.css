@@ -183,8 +183,8 @@ img{max-width:100%}
 @media (max-width:800px){.acv-sobre-grid{grid-template-columns:1fr}}
 .acv-sobre-body{margin-top:24px}
 .acv-sobre-text{font:500 19px/1.55 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.72)}
-.acv-sobre-photo{border:1px dashed rgba(10,22,40,.22);border-radius:2px;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
-.acv-sobre-photo-label{font:500 15px/1.3 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.55)}
+.acv-sobre-photo{border-radius:2px;aspect-ratio:4/5;overflow:hidden}
+.acv-sobre-photo img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* SERVIÇOS */
 .acv-servicos{position:relative;background:var(--navy);padding:100px 24px;box-sizing:border-box;overflow:hidden}
