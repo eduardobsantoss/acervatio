@@ -1,4 +1,5 @@
 import useReveal from '../hooks/useReveal';
+import brunoPhoto from '../assets/team/bruno-humberto.jpg';
 
 export default function Sobre() {
   const headRef = useReveal();
@@ -23,7 +24,7 @@ export default function Sobre() {
           </div>
         </div>
         <div className="acv-sobre-photo rv" ref={photoRef}>
-          <div className="acv-sobre-photo-label">Foto de Bruno Humberto</div>
+          <img src={brunoPhoto} alt="Bruno Humberto, fundador da Acervatio" />
         </div>
       </div>
     </section>
