@@ -13,16 +13,18 @@ import Depoimentos from './components/Depoimentos';
 import Faq from './components/Faq';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
+import FormModal from './components/FormModal';
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
 
   return (
     <>
       <Preloader />
       <Header onOpenMenu={() => setMenuOpen(true)} />
       <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
-      <Hero />
+      <Hero onOpenForm={() => setFormOpen(true)} />
       <Sobre />
       <Conceito />
       <Servicos />
@@ -33,6 +35,7 @@ export default function App() {
       <Faq />
       <Contato />
       <Footer />
+      {formOpen && <FormModal onClose={() => setFormOpen(false)} />}
     </>
   );
 }

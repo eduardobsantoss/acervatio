@@ -1,5 +1,5 @@
 import logoBege from '../assets/brand/logo-h-bege.svg';
-import { WA_URL, CLIENTE_URL } from '../data/content';
+import { WA_URL } from '../data/content';
 
 const LINKS = [
   { id: 'sobre', label: 'Sobre', dim: false },
@@ -32,15 +32,8 @@ export default function MobileMenu({ open, onClose }) {
             {link.label}
           </a>
         ))}
-        {/* TODO: substituir CLIENTE_URL (em src/data/content.js) pela URL real do sistema externo de acesso do cliente */}
-        <a href={CLIENTE_URL} className="acv-mobile-link acv-mobile-link-dim" onClick={onClose}>
-          Acesso do Cliente
-        </a>
       </nav>
-      <div className="acv-mobile-divider"></div>
-      <div className="acv-mobile-label">FALE COM O GESTOR</div>
-      <div className="acv-mobile-phone">WhatsApp · (34) 9 9235-9502</div>
-      <a href={WA_URL} className="acv-mobile-cta" onClick={onClose}>
+      <a href={WA_URL} target="_blank" rel="noopener" className="acv-mobile-cta" onClick={onClose}>
         Falar com especialista →
       </a>
     </div>
