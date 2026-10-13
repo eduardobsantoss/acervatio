@@ -1,28 +1,11 @@
-import logoBege from '../assets/brand/logo-h-bege.svg';
-import { WA_URL } from '../data/content';
-
-const SITE_LINKS = [
-  { id: 'sobre', label: 'Sobre' },
-  { id: 'servicos', label: 'Serviços' },
-  { id: 'metodo', label: 'Método' },
-  { id: 'resultados', label: 'Resultados' },
-  { id: 'diferenca', label: 'A Diferença' },
-  { id: 'depoimentos', label: 'Depoimentos' },
-  { id: 'faq', label: 'FAQ' },
-  { id: 'contato', label: 'Contato' },
-];
+import logoTagBege from '../assets/brand/logo-h-tag-bege.svg';
+import { SITE_LINKS, WA_URL } from '../data/content';
 
 export default function Footer() {
   return (
     <footer className="acv-footer">
       <div className="acv-footer-inner">
-        <div className="acv-footer-grid">
-          <div className="acv-footer-brand">
-            <img src={logoBege} alt="Acervatio" />
-            <div className="acv-footer-brand-text">
-              Gestão privada de patrimônio em milhas. Atendimento sob indicação, em todo o Brasil.
-            </div>
-          </div>
+        <div className="pj-footer-grid">
           <div className="acv-footer-col">
             <div className="acv-footer-col-title">O SITE</div>
             <div className="acv-footer-col-items">
@@ -36,12 +19,31 @@ export default function Footer() {
           <div className="acv-footer-col">
             <div className="acv-footer-col-title">CONTATO</div>
             <div className="acv-footer-col-items">
-              <a href={WA_URL}>WhatsApp · (34) 9 9235-9502</a>
-              <a href="mailto:bruno@acervatio.com.br">bruno@acervatio.com.br</a>
-              <a href="https://www.instagram.com/obrunohumberto" target="_blank" rel="noopener">
-                Instagram
+              <a className="pj-contact" href={WA_URL} target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" />
+                </svg>
+                (34) 9 9235-9502
               </a>
+              <a className="pj-contact" href="https://www.instagram.com/obrunohumberto" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M17.2 6.8h.01" />
+                </svg>
+                @obrunohumberto
+              </a>
+              <span className="pj-contact">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3.5 7 8.5 6 8.5-6" />
+                </svg>
+                bruno@acervatio.com.br
+              </span>
             </div>
+          </div>
+          <div className="pj-footer-brand">
+            <img src={logoTagBege} alt="Acervatio" />
           </div>
         </div>
         <div className="acv-footer-bottom">

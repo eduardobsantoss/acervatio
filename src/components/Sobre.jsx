@@ -3,7 +3,6 @@ import brunoPhoto from '../assets/team/bruno-humberto.jpg';
 
 export default function Sobre() {
   const headRef = useReveal();
-  const bodyRef = useReveal();
   const photoRef = useReveal();
 
   return (
@@ -11,18 +10,14 @@ export default function Sobre() {
       <div className="acv-section-inner acv-sobre-grid">
         <div className="acv-sobre-head rv" ref={headRef}>
           <div className="acv-eyebrow">SOBRE A ACERVATIO</div>
-          <div className="acv-h2">
-            Gestão de patrimônio.
-            <br />
-            <span className="acv-thin-italic">Não agência de viagens.</span>
-          </div>
-          <div className="acv-sobre-body rv" ref={bodyRef}>
-            <div className="acv-sobre-text">
-              Fundada por <span className="acv-bold">Bruno Humberto</span>, a Acervatio soma três anos cuidando do
-              patrimônio em milhas de famílias em todo o Brasil, com atendimento presencial e online — geralmente por
-              indicação. O diferencial não é uma ferramenta exclusiva: é a profundidade e a continuidade da gestão,
-              mês após mês.
-            </div>
+          <div className="acv-h2">Gestão de patrimônio.</div>
+          <div className="sb-sub">Pontos, milhas e benefícios vistos como aquilo que realmente são: patrimônio.</div>
+          <div className="sb-rule"></div>
+          <div className="sb-lead">A ACERVATIO nasceu da minha própria relação com as viagens.</div>
+          <div className="sb-text">
+            Quanto mais eu buscava formas de viajar melhor, mais percebia que existia um universo de pontos, milhas e
+            benefícios sendo pouco aproveitado, inclusive entre pessoas que já utilizavam o cartão de crédito de forma
+            recorrente e acumulavam pontos e benefícios sem uma gestão adequada.
           </div>
         </div>
         <div className="acv-sobre-photo rv" ref={photoRef}>

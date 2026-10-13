@@ -1,23 +1,6 @@
 import { useState } from 'react';
 import useReveal from '../hooks/useReveal';
-import { FAQS } from '../data/content';
-
-function FaqItem({ item, index, isOpen, onToggle }) {
-  const ref = useReveal(index);
-  return (
-    <div className={`acv-faq-item rv${isOpen ? ' is-open' : ''}`} ref={ref}>
-      <div className="acv-faq-q" onClick={onToggle}>
-        <div className="acv-faq-q-text">{item.q}</div>
-        <div className="acv-faq-plus">+</div>
-      </div>
-      <div className="acv-faq-a-wrap">
-        <div className="acv-faq-a-inner">
-          <div className="acv-faq-a">{item.a}</div>
-        </div>
-      </div>
-    </div>
-  );
-}
+import { FAQS, WA_URL } from '../data/content';
 
 export default function Faq() {
   const headRef = useReveal();
@@ -29,17 +12,29 @@ export default function Faq() {
         <div className="acv-faq-heading rv" ref={headRef}>
           <div className="acv-eyebrow">DÚVIDAS</div>
           <div className="acv-h2">Antes de conversarmos.</div>
-          <div className="acv-section-sub">Se a sua pergunta não estiver aqui, mande no WhatsApp — respondemos pessoalmente.</div>
+          <div className="acv-section-sub" style={{ marginTop: 14 }}>
+            Se a sua dúvida não estiver aqui, fale com a nossa equipe.
+          </div>
+          <div className="pj-faq-more">Ainda ficou alguma dúvida?</div>
+          <div className="pj-faq-cta" style={{ marginTop: 14 }}>
+            <a href={WA_URL} target="_blank" rel="noopener" className="acv-btn-dark">
+              Fale diretamente com a nossa equipe <span className="acv-arrow">→</span>
+            </a>
+          </div>
         </div>
         <div>
           {FAQS.map((item, i) => (
-            <FaqItem
-              key={item.q}
-              item={item}
-              index={i}
-              isOpen={openIndex === i}
-              onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
-            />
+            <div key={item.q} className={`acv-faq-item${openIndex === i ? ' is-open' : ''}`}>
+              <button className="acv-faq-q" onClick={() => setOpenIndex(openIndex === i ? -1 : i)}>
+                <div className="acv-faq-q-text">{item.q}</div>
+                <div className="acv-faq-plus">+</div>
+              </button>
+              <div className="acv-faq-a-wrap">
+                <div className="acv-faq-a-inner">
+                  <div className="acv-faq-a">{item.a}</div>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
