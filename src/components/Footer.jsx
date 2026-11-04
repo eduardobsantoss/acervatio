@@ -25,21 +25,31 @@ export default function Footer() {
                 </svg>
                 (34) 9 9235-9502
               </a>
-              <a className="pj-contact" href="https://www.instagram.com/obrunohumberto" target="_blank" rel="noopener">
+              <a
+                className="pj-contact"
+                href="https://www.instagram.com/acervatio.br/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Abrir o Instagram @acervatio.br"
+              >
                 <svg viewBox="0 0 24 24">
                   <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
                   <circle cx="12" cy="12" r="4" />
                   <path d="M17.2 6.8h.01" />
                 </svg>
-                @obrunohumberto
+                @acervatio.br
               </a>
-              <span className="pj-contact">
+              <a
+                className="pj-contact"
+                href="mailto:atendimento@acervatio.com.br?subject=Contato%20pelo%20site%20ACERVATIO"
+                aria-label="Enviar e-mail para atendimento@acervatio.com.br"
+              >
                 <svg viewBox="0 0 24 24">
                   <rect x="3" y="5" width="18" height="14" rx="2" />
                   <path d="m3.5 7 8.5 6 8.5-6" />
                 </svg>
-                bruno@acervatio.com.br
-              </span>
+                atendimento@acervatio.com.br
+              </a>
             </div>
           </div>
           <div className="pj-footer-brand">

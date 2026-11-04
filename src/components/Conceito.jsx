@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import useReveal from '../hooks/useReveal';
 import { prefersReducedMotion } from '../utils/motion';
 
-const WORDS = ['Pontos', 'milhas', 'benefícios', 'experiências', 'histórias'];
+const WORDS = ['pontos', 'milhas', 'benefícios', 'experiências', 'histórias'];
 
 // The five words rise in once the block is in view, then a highlight cycles
 // through them; hovering or clicking a word takes over the highlight.

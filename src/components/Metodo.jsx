@@ -48,11 +48,12 @@ export default function Metodo() {
         return { x: n.left - r.left + n.width / 2, y: n.top - r.top + n.height / 2 };
       });
       const narrow = W < 700;
+      const bend = narrow ? 0.9 : 0.55;
       let prev = { x: narrow ? points[0].x : W / 2, y: 0 };
       let d = `M${prev.x},${prev.y}`;
       points.concat([{ x: narrow ? points[points.length - 1].x : W / 2, y: H }]).forEach((pt) => {
         const h = pt.y - prev.y;
-        d += ` C${prev.x},${prev.y + h * 0.55} ${pt.x},${pt.y - h * 0.55} ${pt.x},${pt.y}`;
+        d += ` C${prev.x},${prev.y + h * bend} ${pt.x},${pt.y - h * bend} ${pt.x},${pt.y}`;
         prev = pt;
       });
       trail.querySelectorAll('svg').forEach((s) => s.setAttribute('viewBox', `0 0 ${W} ${H}`));
