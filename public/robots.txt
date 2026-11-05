@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acervatio.com.br/sitemap.xml
