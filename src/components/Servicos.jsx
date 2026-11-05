@@ -24,17 +24,13 @@ export default function Servicos() {
   const { stageRef, index, narrow, offset, select, prev, next, wasDragged, stageHandlers, hoverHandlers } =
     useCoverflow(SERVICOS.length);
 
-  // Slide the tab row so the active tab sits in the middle of its box.
+  // The tab row stays put; only when it overflows (narrow screens) is the
+  // active tab scrolled into view.
   useEffect(() => {
-    const row = rowRef.current;
-    const center = () => {
-      const tab = row.children[index];
-      row.style.transform = `translateX(${row.parentNode.clientWidth / 2 - (tab.offsetLeft + tab.offsetWidth / 2)}px)`;
-    };
-    center();
-    window.addEventListener('resize', center);
-    document.fonts?.ready.then(center);
-    return () => window.removeEventListener('resize', center);
+    const box = rowRef.current.parentNode;
+    if (box.scrollWidth <= box.clientWidth) return;
+    const tab = rowRef.current.children[index];
+    box.scrollTo({ left: tab.offsetLeft - box.clientWidth / 2 + tab.offsetWidth / 2, behavior: 'smooth' });
   }, [index]);
 
   return (

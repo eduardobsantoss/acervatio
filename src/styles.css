@@ -80,13 +80,15 @@ img{max-width:100%}
 .acv-header.is-hidden{transform:translateY(-140%)}
 .acv-progress-track{position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:min(100%,1560px);height:2px;background:rgba(10,22,40,.08);border-radius:2px;overflow:hidden}
 .acv-progress-bar{height:100%;width:100%;background:var(--gold);transform-origin:left;transform:scaleX(0)}
-.acv-header-inner{display:flex;align-items:center;gap:24px;padding:15px 18px 15px 28px;border-radius:999px;background:rgba(239,239,230,.72);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(10,22,40,.09);box-shadow:0 4px 20px rgba(10,22,40,.08)}
+.acv-header-inner{display:flex;align-items:center;gap:20px;padding:15px 18px 15px 28px;border-radius:999px;background:rgba(239,239,230,.72);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(10,22,40,.09);box-shadow:0 4px 20px rgba(10,22,40,.08)}
 .acv-header-logo{height:30px;display:block}
 .acv-nav-desktop{display:none;align-items:center;gap:4px}
-.acv-nav-desktop a{padding:9px 12px;border-radius:999px;white-space:nowrap;font:600 16px/1 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.7);transition:color var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.acv-nav-desktop a{padding:9px 11px;border-radius:999px;white-space:nowrap;font:600 16px/1 'Darker Grotesque',sans-serif;color:rgba(10,22,40,.7);transition:color var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
 .acv-nav-desktop a.is-active{color:var(--navy);background:rgba(10,22,40,.07)}
-.acv-header-actions{display:none;align-items:center;gap:12px}
-.acv-link-cliente{padding:9px 16px;border-radius:999px;background:var(--gold);font:600 16px/1 'Darker Grotesque',sans-serif;color:var(--navy);white-space:nowrap;transition:background var(--dur-fast) var(--ease)}
+/* both actions share one column width so they read as a matched pair */
+.acv-header-actions{display:none;flex:none;align-items:center;grid-auto-flow:column;grid-auto-columns:1fr;gap:10px}
+.acv-header-actions>a{justify-content:center;text-align:center}
+.acv-link-cliente{padding:11px 22px;border-radius:999px;background:var(--gold);font:600 17px/1 'Darker Grotesque',sans-serif;letter-spacing:.01em;color:var(--navy);white-space:nowrap;transition:background var(--dur-fast) var(--ease)}
 .acv-link-cliente:hover{background:var(--gold-light);color:var(--navy)}
 .acv-btn-dark{padding:11px 22px;border-radius:999px;background:var(--navy);color:var(--bg);font:600 17px/1 'Darker Grotesque',sans-serif;letter-spacing:.01em;display:inline-flex;align-items:center;white-space:nowrap;transition:background var(--dur-fast) var(--ease)}
 .acv-btn-dark:hover{background:var(--bronze);color:var(--bg)}
@@ -95,10 +97,10 @@ img{max-width:100%}
 .acv-burger span:first-child{width:20px;height:1.5px}
 .acv-burger span:last-child{width:14px;height:1.5px}
 
-/* seven nav items plus both actions need ~1210px */
-@media (min-width:1250px){
+/* seven nav items plus both actions need ~1225px */
+@media (min-width:1270px){
   .acv-nav-desktop{display:flex}
-  .acv-header-actions{display:flex}
+  .acv-header-actions{display:grid}
   .acv-burger{display:none}
 }
 
@@ -251,8 +253,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 .au-time{flex:none;font:600 12px/1 'Darker Grotesque',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(239,239,230,.6)}
 
 /* serviços: abas + carrossel */
-.pj-tabs{position:relative;overflow:hidden;padding-bottom:14px;margin-bottom:22px;border-bottom:1px solid rgba(239,239,230,.14);-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
-.sv-row{display:inline-flex;gap:30px;white-space:nowrap;transition:transform 1.1s cubic-bezier(.45,.05,.25,1);will-change:transform}
+.pj-tabs{position:relative;overflow-x:auto;scrollbar-width:none;padding-bottom:14px;margin-bottom:22px;border-bottom:1px solid rgba(239,239,230,.14)}
+.pj-tabs::-webkit-scrollbar{display:none}
+/* fixed and centred while it fits; scrolls sideways only on narrow screens */
+.sv-row{display:flex;gap:30px;width:max-content;margin-inline:auto;white-space:nowrap}
 .sv-nav{justify-content:center;margin-top:10px}
 .pj-tab{flex:none;font:600 19px/1 'Darker Grotesque',sans-serif;color:var(--bg);opacity:.36;padding:8px 0;transition:opacity var(--dur-fast) var(--ease)}
 .pj-tab:hover{opacity:.7}
