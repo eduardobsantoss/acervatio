@@ -1,14 +1,6 @@
 import logoNavy from '../assets/brand/logo-h-navy.svg';
 import useHeaderScroll from '../hooks/useHeaderScroll';
-import { WA_URL, CLIENTE_URL } from '../data/content';
-
-const NAV_ITEMS = [
-  { id: 'sobre', label: 'Sobre' },
-  { id: 'servicos', label: 'Serviços' },
-  { id: 'metodo', label: 'Método' },
-  { id: 'diferenca', label: 'Diferença' },
-  { id: 'faq', label: 'FAQ' },
-];
+import { WA_URL, CLIENTE_URL, NAV_LINKS } from '../data/content';
 
 export default function Header({ onOpenMenu }) {
   const { headerRef, progressBarRef, activeNav } = useHeaderScroll();
@@ -21,7 +13,7 @@ export default function Header({ onOpenMenu }) {
       <div className="acv-header-inner">
         <img src={logoNavy} className="acv-header-logo" alt="Acervatio" />
         <nav className="acv-nav-desktop">
-          {NAV_ITEMS.map((item) => (
+          {NAV_LINKS.map((item) => (
             <a key={item.id} href={`#${item.id}`} className={activeNav === item.id ? 'is-active' : ''}>
               {item.label}
             </a>

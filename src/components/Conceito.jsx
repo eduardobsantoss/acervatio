@@ -63,7 +63,7 @@ function NameOrigin() {
       <div className="nm-eyebrow">A origem do nome</div>
       <div className="nm-word">ACERVATIO</div>
       <p className="nm-def">
-        Tem origem no latim e traduz a ideia de reunir, preservar e dar sentido ao que se acumula ao longo do tempo.
+        Tem origem no latim e remete à ideia de acumular, reunir e preservar aquilo que possui valor ao longo do tempo.
       </p>
       <div className="nm-words">
         {WORDS.map((word, i) => (

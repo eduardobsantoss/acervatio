@@ -41,7 +41,7 @@ export default function Servicos() {
     <section id="servicos" className="acv-servicos">
       <div className="acv-servicos-inner">
         <div className="acv-servicos-head rv" ref={headRef}>
-          <div className="acv-eyebrow acv-eyebrow-gold">SERVIÇOS</div>
+          <div className="acv-eyebrow acv-eyebrow-gold">O QUE FAZEMOS</div>
           <div className="acv-h2 acv-h2-light">
             Gestão de ponta a ponta.<span className="pj-sub2">Do patrimônio acumulado à execução da viagem.</span>
           </div>

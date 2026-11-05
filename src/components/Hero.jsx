@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import { WA_URL } from '../data/content';
 import { PLANE_PATH, clamp01 } from '../utils/motion';
 
 const CURVE = 'M0,286 C240,278 380,254 560,214 S900,120 1120,66 S1330,26 1440,14';
@@ -74,23 +73,22 @@ export default function Hero({ onOpenForm }) {
       </div>
       <div className="acv-hero-content">
         <div className="acv-overflow">
-          <div className="acv-h1 acv-h1-dark acv-lineup acv-delay-1">Milhas não são</div>
+          <div className="acv-h1 acv-h1-hero acv-h1-dark acv-lineup acv-delay-1">
+            Pontos, milhas e benefícios possuem valor.
+          </div>
         </div>
         <div className="acv-overflow">
-          <div className="acv-h1 acv-h1-dark acv-lineup acv-delay-2">
-            benefício. São <span className="acv-italic-gold-light">patrimônio</span>.
+          <div className="acv-h1 acv-h1-hero acv-h1-dark acv-lineup acv-delay-2">
+            E merecem ser cuidados como <span className="acv-italic-gold-light">patrimônio</span>.
           </div>
         </div>
         <div className="acv-hero-sub acv-hero-sub-dark acv-fadeup acv-delay-3">
-          E patrimônio se administra. Cuidamos da estrutura de cartões, das janelas de bônus e da emissão. Você
-          recebe o relatório e embarca.
+          E patrimônio se administra com estratégia. Gerenciamos cartões, pontos, emissões e toda a jornada antes,
+          durante e depois da sua viagem.
         </div>
         <div className="acv-hero-ctas acv-fadeup acv-delay-4">
-          <a href={WA_URL} target="_blank" rel="noopener" className="acv-btn-gold acv-btn-lg" style={{ marginTop: 0 }}>
-            Falar no WhatsApp <span className="acv-arrow">→</span>
-          </a>
-          <button className="acv-btn-outline acv-btn-outline-dark" onClick={onOpenForm}>
-            Quero minha análise
+          <button className="acv-btn-gold acv-btn-lg" style={{ marginTop: 0 }} onClick={onOpenForm}>
+            Quero minha análise <span className="acv-arrow">→</span>
           </button>
         </div>
       </div>

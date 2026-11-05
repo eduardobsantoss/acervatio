@@ -1,13 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { prefersReducedMotion } from '../utils/motion';
 
-const AUTOPLAY_MS = 4500;
 const SWIPE_PX = 40;
 
 // Circular selector: one item in the centre, the rest fanned out by their
-// signed distance from it. Auto-advances while on screen, pauses on hover
-// (or when `paused`), and any manual move restarts the timer.
-export default function useCoverflow(count, { paused = false } = {}) {
+// signed distance from it. Auto-advances while on screen, pauses on hover,
+// keyboard focus (or when `paused`), and any manual move restarts the timer.
+export default function useCoverflow(count, { paused = false, interval = 4500 } = {}) {
   const stageRef = useRef(null);
   const pointerX = useRef(null);
   const dragged = useRef(false);
@@ -15,6 +14,7 @@ export default function useCoverflow(count, { paused = false } = {}) {
   const [narrow, setNarrow] = useState(false);
   const [inView, setInView] = useState(false);
   const [hover, setHover] = useState(false);
+  const [focused, setFocused] = useState(false);
   const [manualMoves, setManualMoves] = useState(0);
 
   const wrap = useCallback((i) => ((i % count) + count) % count, [count]);
@@ -54,10 +54,10 @@ export default function useCoverflow(count, { paused = false } = {}) {
   }, []);
 
   useEffect(() => {
-    if (!inView || hover || paused || prefersReducedMotion()) return undefined;
-    const timer = setInterval(() => setIndex((i) => wrap(i + 1)), AUTOPLAY_MS);
+    if (!inView || hover || focused || paused || prefersReducedMotion()) return undefined;
+    const timer = setInterval(() => setIndex((i) => wrap(i + 1)), interval);
     return () => clearInterval(timer);
-  }, [inView, hover, paused, wrap, manualMoves]);
+  }, [inView, hover, focused, paused, interval, wrap, manualMoves]);
 
   const offset = (n) => {
     let d = wrap(n - index);
@@ -96,6 +96,10 @@ export default function useCoverflow(count, { paused = false } = {}) {
     hoverHandlers: {
       onMouseEnter: () => setHover(true),
       onMouseLeave: () => setHover(false),
+      onFocus: () => setFocused(true),
+      onBlur: (e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) setFocused(false);
+      },
     },
   };
 }

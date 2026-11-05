@@ -1,12 +1,16 @@
-export const WA_URL =
-  'https://wa.me/5534992359502?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20gest%C3%A3o%20de%20milhas%20da%20Acervatio.';
+export const WA_NUMBER = '5534992359502';
+export const waLink = (text) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+export const WA_URL = waLink('Olá, quero saber mais sobre a gestão de milhas da Acervatio.');
+
+export const GASTO_OPCOES = ['Até R$ 10 mil', 'R$ 10 mil a R$ 25 mil', 'R$ 25 mil a R$ 50 mil', 'R$ 50 mil a R$ 100 mil', 'Acima de R$ 100 mil'];
+export const VIAGENS_OPCOES = ['1 a 2', '3 a 5', '6 a 10', 'Mais de 10'];
 
 // TODO: substituir "#" pela URL real do sistema externo de acesso do cliente
 export const CLIENTE_URL = '#';
 
 export const SERVICOS = [
   { tab: 'Cartões', title: 'Curadoria de cartões', desc: 'Acompanhamento do mercado e avaliação de cartões, benefícios e novas oportunidades compatíveis com o perfil de cada cliente.' },
-  { tab: 'Pontos e milhas', title: 'Gestão de pontos e milhas', desc: 'Acompanhamento de saldos, validade, transferências' },
+  { tab: 'Pontos e milhas', title: 'Gestão de pontos e milhas', desc: 'Acompanhamento contínuo de saldos, validade, transferências e oportunidades, com estratégia para preservar e potencializar o valor dos seus pontos e milhas.' },
   { tab: 'Passagens', title: 'Passagens', desc: 'Emissões nacionais e internacionais, da classe econômica à primeira classe.' },
   { tab: 'Hospedagem', title: 'Hospedagem', desc: 'Hospedagens escolhidas de acordo com o perfil e o roteiro de cada viagem.' },
   { tab: 'Roteiro', title: 'Roteiro e logística', desc: 'Organização das etapas, conexões e deslocamentos de cada viagem.' },
@@ -22,30 +26,30 @@ export const LEME = [
   { letter: 'L', title: 'Leitura Patrimonial', desc: 'Analisamos cartões, gastos, programas, saldos, benefícios e objetivos para entender todo o patrimônio de viagens do cliente.' },
   { letter: 'E', title: 'Estratégia', desc: 'Acompanhamos o mercado e definimos onde estão as melhores oportunidades de acúmulo, transferência e uso, sempre de acordo com o perfil e os objetivos de cada cliente.' },
   { letter: 'M', title: 'Movimento', desc: 'Realizamos as movimentações necessárias para colocar a estratégia em prática, das transferências de pontos às emissões e reservas.' },
-  { letter: 'E', title: 'Experiência', desc: 'Acompanhamos a viagem antes, durante e depois do embarque, buscando oportunidades de upgrades, melhores assentos, benefícios e ajustes que possam melhorar a experiência do cliente.' },
+  { letter: 'E', title: 'Experiência', desc: 'Acompanhamos cada etapa da sua viagem, inclusive após a emissão, buscando oportunidades de upgrade, melhores assentos, benefícios e ajustes que possam tornar a experiência ainda melhor.' },
 ];
 
 // Cada case corresponde ao print de mesmo número em src/assets/cases/.
 export const CASES = [
-  { label: 'Economia', value: 'R$ 6.171,50', context: 'Curaçao, 2 passageiros' },
-  { label: 'Pontos a mais em 12 meses', value: '+300 mil', context: 'Upgrade de cartão, com o mesmo volume de gastos' },
-  { label: 'Economia', value: '+ de R$ 6.500', context: 'Miami, voo direto pagando só as taxas' },
-  { label: 'Bônus na transferência', value: '+132 mil milhas', context: 'Pontos transferidos no momento certo' },
-  { label: 'Upgrade de cabine', value: 'Executiva', context: 'Lisboa → Campinas, sem custo adicional' },
-  { label: 'Reserva regularizada', value: 'Assentos juntos', context: 'Alteração da companhia resolvida antes do embarque' },
-  { label: 'Tarifa garantida', value: 'Executiva', context: 'Nova York → São Paulo, com prazo para quitar as milhas' },
-  { label: 'Economia', value: 'R$ 1.414,46', context: 'Premium Economy, cerca de 80% de redução' },
-  { label: 'Custos evitados', value: 'R$ 1.260', context: 'Assentos premium para 6 passageiros com status Diamante' },
-  { label: 'Economia', value: 'R$ 10.754,20', context: 'São Paulo → Dallas, mais de 90% de redução' },
-  { label: 'Economia', value: 'R$ 6.313,68', context: 'São Paulo → Santiago, cerca de 93% de redução' },
-  { label: 'Economia', value: 'R$ 3.882,12', context: 'Raleigh → São Paulo, cerca de 99% de desconto' },
-  { label: 'Economia', value: 'R$ 2.032,43', context: 'Emissão 100% com milhas e assentos premium 1A' },
-  { label: 'Economia', value: 'R$ 15.775,03', context: 'São Paulo ⇄ Madrid, com classe executiva' },
-  { label: 'Economia', value: 'R$ 6.280,92', context: 'Guarulhos → Paris' },
-  { label: 'Economia', value: 'R$ 3.223,46', context: 'Passagens emitidas e assento premium no voo noturno' },
-  { label: 'Economia', value: 'R$ 4.388,00', context: 'Uberlândia → Ilhéus' },
-  { label: 'Economia', value: 'R$ 34.068,72', context: 'Cinco trechos, de Teresina ao Havaí' },
-  { label: 'Economia', value: 'R$ 8.991,00', context: 'Hospedagem no Ritz Lagoa da Anta' },
+  { label: 'Gestão patrimonial', value: 'R$ 6.171,50', context: 'de economia em 2 passagens para Curaçao' },
+  { label: 'Patrimônio potencializado', value: '+300 mil pontos em 12 meses', context: 'com o mesmo volume de gastos' },
+  { label: 'Economia', value: 'Mais de R$ 6.500', context: 'Miami, voo direto pagando apenas as taxas' },
+  { label: 'Transferência bonificada', value: '+132 mil milhas', context: 'Pontos transferidos no momento certo' },
+  { label: 'Upgrade confirmado', value: 'Classe Executiva', context: 'Lisboa → Campinas, sem custo adicional' },
+  { label: 'Reacomodação resolvida', value: 'Viagem reorganizada', context: 'Reserva e assentos ajustados antes do embarque' },
+  { label: 'Reserva estratégica', value: 'Classe Executiva', context: 'Nova York → São Paulo, com prazo para completar as milhas da reserva' },
+  { label: 'Economia', value: 'R$ 1.414,46', context: 'Premium Economy por R$ 347,54' },
+  { label: 'Benefícios otimizados', value: 'R$ 1.260 em economia', context: 'Assentos premium para toda a família' },
+  { label: 'Economia', value: 'R$ 10.754,20', context: 'São Paulo → Dallas por R$ 280,67 por pessoa' },
+  { label: 'Economia', value: 'R$ 6.313,68', context: 'Ida e volta para o Chile' },
+  { label: 'Economia', value: 'R$ 3.882,12', context: 'Raleigh → São Paulo por R$ 29,88' },
+  { label: 'Economia', value: 'R$ 2.032,43', context: 'Emissão 100% com milhas e assentos premium incluídos' },
+  { label: 'Economia', value: 'R$ 15.775,03', context: 'São Paulo → Madri, ida e volta' },
+  { label: 'Economia', value: 'R$ 6.280,92', context: 'São Paulo → Paris, ida e volta' },
+  { label: 'Economia', value: 'R$ 3.223,46', context: 'Passagem emitida com assento premium incluído' },
+  { label: 'Economia', value: 'R$ 4.388,00', context: 'Uberlândia → Ilhéus, 2 passageiros' },
+  { label: 'Economia', value: 'R$ 34.068,72', context: 'Viagem em família' },
+  { label: 'Economia', value: 'R$ 8.991,00', context: 'Hospedagem em família no Réveillon' },
 ];
 
 export const CMP = [
@@ -77,13 +81,15 @@ export const FAQS = [
   { q: 'Como funciona o acesso às minhas contas e programas?', a: 'Não solicitamos senha bancária, token ou acesso à sua conta corrente. A gestão utiliza apenas os acessos necessários aos programas de fidelidade e serviços relacionados, sempre com autorização do cliente.' },
 ];
 
-export const SITE_LINKS = [
+// Menu do cabeçalho (desktop e mobile); o rodapé acrescenta "Contato".
+export const NAV_LINKS = [
   { id: 'sobre', label: 'Sobre' },
-  { id: 'servicos', label: 'Serviços' },
-  { id: 'metodo', label: 'Método' },
+  { id: 'servicos', label: 'O que fazemos' },
+  { id: 'metodo', label: 'Método LEME' },
   { id: 'resultados', label: 'Resultados' },
-  { id: 'diferenca', label: 'A Diferença' },
+  { id: 'diferenca', label: 'Comparativo' },
   { id: 'depoimentos', label: 'Depoimentos' },
   { id: 'faq', label: 'FAQ' },
-  { id: 'contato', label: 'Contato' },
 ];
+
+export const SITE_LINKS = [...NAV_LINKS, { id: 'contato', label: 'Contato' }];

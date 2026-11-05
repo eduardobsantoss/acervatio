@@ -1,4 +1,4 @@
-import logoTagBege from '../assets/brand/logo-h-tag-bege.svg';
+import logoBege from '../assets/brand/logo-h-bege.svg';
 import { SITE_LINKS, WA_URL } from '../data/content';
 
 export default function Footer() {
@@ -53,14 +53,20 @@ export default function Footer() {
             </div>
           </div>
           <div className="pj-footer-brand">
-            <img src={logoTagBege} alt="Acervatio" />
+            <img src={logoBege} alt="Acervatio" />
           </div>
         </div>
         <div className="acv-footer-bottom">
           <div className="acv-footer-legal">
-            A Acervatio é uma consultoria independente e não possui vínculo, representação ou afiliação com
-            companhias aéreas, bancos ou programas de fidelidade. Marcas citadas pertencem a seus respectivos
-            titulares. Resultados variam conforme perfil de gasto e disponibilidade dos programas.
+            <p>
+              A ACERVATIO atua de forma independente e não possui vínculo, representação ou afiliação com companhias
+              aéreas, instituições financeiras ou programas de fidelidade mencionados neste site.
+            </p>
+            <p>
+              Todas as marcas citadas pertencem aos seus respectivos titulares. Resultados, economias e oportunidades
+              podem variar conforme o perfil de cada cliente, disponibilidade, regras e condições dos respectivos
+              programas.
+            </p>
           </div>
           <div className="acv-footer-copy">
             © 2026 ACERVATIO

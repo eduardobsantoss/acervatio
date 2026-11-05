@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
+import { NAV_LINKS } from '../data/content';
 
-const NAV_SECTIONS = ['sobre', 'servicos', 'metodo', 'diferenca', 'faq'];
+const NAV_SECTIONS = NAV_LINKS.map((l) => l.id);
 
 // Scroll-progress bar + hide-on-scroll-down/show-on-scroll-up are driven
 // directly through refs (not React state) so a scroll listener never forces a

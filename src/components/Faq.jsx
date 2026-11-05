@@ -10,7 +10,7 @@ export default function Faq() {
     <section id="faq" className="acv-faq">
       <div className="acv-section-inner acv-faq-grid">
         <div className="acv-faq-heading rv" ref={headRef}>
-          <div className="acv-eyebrow">DÚVIDAS</div>
+          <div className="acv-eyebrow">FAQ</div>
           <div className="acv-h2">Antes de conversarmos.</div>
           <div className="acv-section-sub" style={{ marginTop: 14 }}>
             Se a sua dúvida não estiver aqui, fale com a nossa equipe.

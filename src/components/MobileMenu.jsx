@@ -1,15 +1,8 @@
 import logoBege from '../assets/brand/logo-h-bege.svg';
-import { WA_URL } from '../data/content';
+import { WA_URL, NAV_LINKS } from '../data/content';
 
-const LINKS = [
-  { id: 'sobre', label: 'Sobre', dim: false },
-  { id: 'servicos', label: 'Serviços', dim: false },
-  { id: 'metodo', label: 'Método', dim: false },
-  { id: 'resultados', label: 'Resultados', dim: true },
-  { id: 'diferenca', label: 'Diferença', dim: true },
-  { id: 'depoimentos', label: 'Depoimentos', dim: true },
-  { id: 'faq', label: 'FAQ', dim: true },
-];
+// The first three links get the large type; the rest are secondary.
+const LINKS = NAV_LINKS.map((l, i) => ({ ...l, dim: i > 2 }));
 
 export default function MobileMenu({ open, onClose }) {
   return (

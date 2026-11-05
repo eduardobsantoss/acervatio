@@ -65,7 +65,7 @@ export default function Resultados() {
   const [zoomed, setZoomed] = useState(null);
   const closeZoom = useCallback(() => setZoomed(null), []);
   const { stageRef, index, narrow, offset, select, prev, next, wasDragged, stageHandlers, hoverHandlers } =
-    useCoverflow(CASES.length, { paused: zoomed !== null });
+    useCoverflow(CASES.length, { paused: zoomed !== null, interval: 10000 });
 
   return (
     <section id="resultados" className="acv-resultados">
@@ -118,7 +118,7 @@ export default function Resultados() {
                   </div>
                   <div className="cf-info">
                     <span>{item.label}</span>
-                    <strong>{item.value}</strong>
+                    <strong className={item.value.length > 18 ? 'is-long' : undefined}>{item.value}</strong>
                     <em>{item.context}</em>
                   </div>
                 </button>
