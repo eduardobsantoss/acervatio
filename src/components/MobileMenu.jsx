@@ -1,5 +1,5 @@
 import logoBege from '../assets/brand/logo-h-bege.svg';
-import { WA_URL, NAV_LINKS } from '../data/content';
+import { WA_URL, CLIENTE_URL, NAV_LINKS } from '../data/content';
 
 // The first three links get the large type; the rest are secondary.
 const LINKS = NAV_LINKS.map((l, i) => ({ ...l, dim: i > 2 }));
@@ -26,6 +26,9 @@ export default function MobileMenu({ open, onClose }) {
           </a>
         ))}
       </nav>
+      <a href={CLIENTE_URL} className="acv-mobile-cliente" onClick={onClose}>
+        Acesso do Cliente
+      </a>
       <a href={WA_URL} target="_blank" rel="noopener" className="acv-mobile-cta" onClick={onClose}>
         Falar com especialista →
       </a>
