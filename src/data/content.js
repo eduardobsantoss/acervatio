@@ -1,6 +1,6 @@
-export const WA_NUMBER = '5534992359502';
+export const WA_NUMBER = '5534996521665';
 export const waLink = (text) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
-export const WA_URL = waLink('Olá, quero saber mais sobre a gestão de milhas da Acervatio.');
+export const WA_URL = waLink('Olá! Conheci a ACERVATIO pelo site e gostaria de entender melhor como funciona a gestão e se ela faz sentido para o meu perfil.');
 
 export const GASTO_OPCOES = ['Até R$ 10 mil', 'R$ 10 mil a R$ 25 mil', 'R$ 25 mil a R$ 50 mil', 'R$ 50 mil a R$ 100 mil', 'Acima de R$ 100 mil'];
 export const VIAGENS_OPCOES = ['1 a 2', '3 a 5', '6 a 10', 'Mais de 10'];
