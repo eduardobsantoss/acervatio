@@ -20,7 +20,6 @@ export default function Header({ onOpenMenu }) {
           ))}
         </nav>
         <div className="acv-header-actions">
-          {/* TODO: substituir CLIENTE_URL (em src/data/content.js) pela URL real do sistema externo de acesso do cliente */}
           <a href={CLIENTE_URL} className="acv-link-cliente">Acesso do Cliente</a>
           <a href={WA_URL} target="_blank" rel="noopener" className="acv-btn-dark">
             Falar com especialista

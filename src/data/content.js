@@ -5,8 +5,7 @@ export const WA_URL = waLink('Olá! Conheci a ACERVATIO pelo site e gostaria de 
 export const GASTO_OPCOES = ['Até R$ 10 mil', 'R$ 10 mil a R$ 25 mil', 'R$ 25 mil a R$ 50 mil', 'R$ 50 mil a R$ 100 mil', 'Acima de R$ 100 mil'];
 export const VIAGENS_OPCOES = ['1 a 2', '3 a 5', '6 a 10', 'Mais de 10'];
 
-// TODO: substituir "#" pela URL real do sistema externo de acesso do cliente
-export const CLIENTE_URL = '#';
+export const CLIENTE_URL = 'https://app.acervatio.com.br/portal/login';
 
 export const SERVICOS = [
   { tab: 'Cartões', title: 'Curadoria de cartões', desc: 'Acompanhamento do mercado e avaliação de cartões, benefícios e novas oportunidades compatíveis com o perfil de cada cliente.' },
